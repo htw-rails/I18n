@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<!-- example from pragprog's agile web development -->
+	<div id="banner">
+	<%= form_tag root_path, class: 'locale' do %>
+	<%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), onchange: 'this.form.submit()' %>
+	<%= submit_tag 'submit' %>
+	<%= javascript_tag "$('.locale input').hide()" %> <% end %>
+	<%= @page_title || t('.title') %>
+	</div>
+<hr>
 <%= yield %>
 
 </body>

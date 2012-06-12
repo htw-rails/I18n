@@ -2,11 +2,14 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @items }
+    if params[:set_locale]
+      redirect_to items_path(locale: params[:set_locale])
+    else
+      @items = Item.all
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @items }
+      end
     end
   end
 
