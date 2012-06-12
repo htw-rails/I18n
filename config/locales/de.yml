@@ -11,3 +11,5 @@ de:
       edit: 'Bearbeiten'
       destroy_html: "L&ouml;schen"
       sure_html: 'Willst Du diesen Eintrag wirklich l&ouml;schen?'
+    new:
+      back_html: 'Zur&uuml;ck zur Liste'
