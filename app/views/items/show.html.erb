@@ -9,7 +9,10 @@
   <b>Where:</b>
   <%= @item.where %>
 </p>
-
+<p>
+  <b><%= t('activerecord.attributes.item.price')%>:</b>
+  <%= number_to_currency(@item.price) %>
+</p>
 <p>
   <b>Bought:</b>
   <%= @item.bought %>
