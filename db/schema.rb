@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612150329) do
+ActiveRecord::Schema.define(:version => 20120612221816) do
 
   create_table "items", :force => true do |t|
     t.string   "what"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120612150329) do
     t.boolean  "bought"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.decimal  "price"
   end
 
 end
