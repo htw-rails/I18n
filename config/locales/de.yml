@@ -1,6 +1,47 @@
 
 de:
-
+  layouts:
+    application:
+      title: "Deine Einkaufsliste"  
+  items:
+    index:
+      new_item: 'Neuer Eintrag'
+      show: 'Anzeigen'
+      edit: 'Bearbeiten'
+      destroy_html: "L&ouml;schen"
+      sure_html: 'Willst Du diesen Eintrag wirklich l&ouml;schen?'
+  active_record:
+    model:
+      items: "Einkaufslisteneintrag"
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: muss akzeptiert werden
+      blank: muss ausgefüllt werden
+      confirmation: stimmt nicht mit der Bestätigung überein
+      empty: muss ausgefüllt werden
+      equal_to: muss genau %{count} sein
+      even: muss gerade sein
+      exclusion: ist nicht verfügbar
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer oder gleich %{count} sein
+      inclusion: ist kein gültiger Wert
+      invalid: ist nicht gültig
+      less_than: muss kleiner als %{count} sein
+      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      not_a_number: ist keine Zahl
+      not_an_integer: muss ganzzahlig sein
+      odd: muss ungerade sein
+      record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+      taken: ist bereits vergeben
+      too_long: ist zu lang (nicht mehr als %{count} Zeichen)
+      too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
+      wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+    template:
+      body: ! 'Bitte überprüfen Sie die folgenden Felder:'
+      header:
+        one: ! 'Konnte %{model} nicht speichern: ein Fehler.'
+        other: ! 'Konnte %{model} nicht speichern: %{count} Fehler.'
   layouts:
     application:
       title: "Deine Einkaufsliste"  
@@ -13,3 +54,21 @@ de:
       sure_html: 'Willst Du diesen Eintrag wirklich l&ouml;schen?'
     new:
       back_html: 'Zur&uuml;ck zur Liste'
+  activerecord:
+    models:
+      item: "Einkaufslisteneintrag"
+    attributes:
+      item:
+        what: 'Was'
+        where: "Wo einkaufen"
+        bought: "erledigt"
+    errors:
+      messages:
+        blank: "darf nicht leer sein."
+  errors:
+    template:
+      body:    "There were problems with the following fields:"
+      header:
+        one:   "1 problem verhindert, dass dieses %{model} gespeichert wird"
+        other: "%{count} errors prohibited this %{model} from being saved"
+
