@@ -2,4 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title: "Your Shopping List"  
+  items:
+    index:
+      new_item: 'Add Item to Shopping List'
+      show: 'Show'
+      edit: 'Edit'
+      destroy_html: 'Delete'
+      sure_html: 'Do you really want to remove this item from your shopping list?'

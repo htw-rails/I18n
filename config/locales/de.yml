@@ -1,0 +1,13 @@
+
+de:
+
+  layouts:
+    application:
+      title: "Deine Einkaufsliste"  
+  items:
+    index:
+      new_item: 'Neuer Eintrag'
+      show: 'Anzeigen'
+      edit: 'Bearbeiten'
+      destroy_html: "L&ouml;schen"
+      sure_html: 'Willst Du diesen Eintrag wirklich l&ouml;schen?'
