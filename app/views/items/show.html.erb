@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>What:</b>
+  <%= @item.what %>
+</p>
+
+<p>
+  <b>Where:</b>
+  <%= @item.where %>
+</p>
+
+<p>
+  <b>Bought:</b>
+  <%= @item.bought %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
