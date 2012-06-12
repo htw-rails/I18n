@@ -223,7 +223,9 @@ de:
       
 # ab hier wieder von bk
     models:
-      item: "Einkaufslisteneintrag"
+      item: 
+        one: "Einkaufslisteneintrag"
+        other: "Einkaufslisteneinträge"
     attributes:
       item:
         what: 'Was'

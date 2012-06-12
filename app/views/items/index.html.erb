@@ -1,10 +1,12 @@
-<h1>Listing items</h1>
+<h1> <%= t('activerecord.models.item', :count => @items.size)%>
+</h1>
 
 <table>
   <tr>
-    <th>What</th>
-    <th>Where</th>
-    <th>Bought</th>
+    <th><%= t('activerecord.attributes.item.what')%></th>
+    <th><%= t('activerecord.attributes.item.where')%></th>
+    <th><%= t('activerecord.attributes.item.price')%></th>
+    <th><%= t('activerecord.attributes.item.bought')%></th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,7 +16,9 @@
   <tr>
     <td><%= item.what %></td>
     <td><%= item.where %></td>
+	<td><%= number_to_currency(item.price) %></td>
     <td><%= item.bought %></td>
+    
     <td><%= link_to t('.show'), item %></td>
     <td><%= link_to t('.edit'), edit_item_path(item) %></td>
     <td><%= link_to t('.destroy_html'), item, confirm: t('.sure_html'), method: :delete %></td>

@@ -14,3 +14,8 @@ en:
       sure_html: 'Do you really want to remove this item from your shopping list?'
       new:
         back_html: 'Back to list'
+  activerecord:
+    models:
+      item: 
+        one: "Shopping Item"
+        other: "Shopping Items"
